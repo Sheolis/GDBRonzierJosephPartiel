@@ -40,6 +40,8 @@ $('.pcolor_spot').mousedown(function(event) {
     }
 })
 
+
+
 $('#validation').on('click',function(){
   try_number++;
   victory_check=0;
@@ -59,6 +61,9 @@ $('#validation').on('click',function(){
   if (victory_check==5){
     $('#victory').removeClass('hidden');
     $('#restart_button').removeClass('hidden');
+    for (var i = 1; i<6;  i++) {
+      $('#guess_'+i).unbind("click");
+    }
   }
 
   else if (try_number==12) { //afficher la défaite
@@ -66,6 +71,7 @@ $('#validation').on('click',function(){
     $('#restart_button').removeClass('hidden');
     for (var i = 1; i<6; i++) {
       $("#guess_"+i).addClass("color"+secret_pattern[i]);
+      $('#guess_'+i).unbind("click");
     }
   }
 })
