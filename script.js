@@ -3,10 +3,12 @@ var color_guess=[0,0,0,0,0,0]; //retiens le choix du joueur quand il appuie sur 
 var which_slot;
 var try_number=0;
 
+//génération de la couleur mystère
 for (var i = 1; i<6;  i++) {
   secret_pattern.push((Math.floor((Math.random() * 8)+1)));
 }
 
+//selection des couleurs
 $('.pcolor_spot').on('click',function(){
   which_slot=this.id[6];
   color_guess[which_slot]+=1;
@@ -21,11 +23,35 @@ $('.pcolor_spot').on('click',function(){
   }
 })
 
+$('.pcolor_spot').mousedown(function(event) {
+  switch (event.which) {
+      case 3:
+      which_slot=this.id[6];
+      color_guess[which_slot]-=1;
+      if (color_guess[which_slot]==0){
+        color_guess[which_slot]=8; //si on est à la dernière couleur on revient à la première.
+        $("#"+this.id).removeClass("color1");
+        $("#"+this.id).addClass("color8");
+      }
+      else {
+        $("#"+this.id).removeClass("color"+(color_guess[which_slot]+1));
+        $("#"+this.id).addClass("color"+color_guess[which_slot]);
+      }
+    }
+})
+
 $('#validation').on('click',function(){
   try_number++;
   for (var i = 1; i<6; i++) {
     $("#"+try_number+"_"+i).addClass("color"+color_guess[i]);
+    if (color_guess[i]==secret_pattern[i]){
+      $("#c"+try_number+"_"+i).addClass("color10");
+    }
+    else if (secret_pattern.indexOf(color_guess[i])==-1){
+      $("#c"+try_number+"_"+i).addClass("color11");
+    }
   }
+
 
 
 
