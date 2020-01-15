@@ -1,50 +1,66 @@
-.color1{ color:#24F1B3}
-.color2{ color:#285AEA}
-.color3{ color:#A928EA}
-.color4{ color:#F719B4}
-.color5{ color:#F7192A}
-.color6{ color:#F78519}
-.color7{ color:#EDF719}
-.color8{ color:#27C415}
-.color10{ color:#000000}
-.color11{ color:#FFFFFF}
+.color1{ color:#24F1B3;}
+.color2{ color:#285AEA;}
+.color3{ color:#A928EA;}
+.color4{ color:#F719B4;}
+.color5{ color:#F7192A;}
+.color6{ color:#F78519;}
+.color7{ color:#EDF719;}
+.color8{ color:#27C415;}
+.color10{ color:#000000;}
+.color11{ color:#FFFFFF;}
 
 body{
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 375px;
+  width: 375px;
   height: 600px;
 }
 
-.old_trials{
+#old_trials{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 300px;
+  width: 300px;
   height: 552px;
-  background-color: blue;
 }
 
-.clues{
+#clues{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 75px;
+  width: 75px;
   height: 552px;
-  background-color: red;
 }
 
-.interface{
+#interface{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 375px;
+  width: 375px;
   height: 46px;
-  background-color: green;
+}
+
+.trial{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:300px;
+  height:46px;
+  background-color: yellow;
+}
+
+.clue{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:75px;
+  height:46px;
+  background-color: blue;
+}
+
+#validation{
+  width:75px;
+  height:46px;
 }
