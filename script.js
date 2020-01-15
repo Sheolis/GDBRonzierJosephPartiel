@@ -47,7 +47,7 @@ $('#validation').on('click',function(){
     if (color_guess[i]==secret_pattern[i]){
       $("#c"+try_number+"_"+i).addClass("color10");
     }
-    else if (secret_pattern.indexOf(color_guess[i])==-1){
+    else if (secret_pattern.indexOf(color_guess[i])!=-1){
       $("#c"+try_number+"_"+i).addClass("color11");
     }
   }
