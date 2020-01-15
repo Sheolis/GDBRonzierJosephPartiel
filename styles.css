@@ -77,6 +77,12 @@ body{
   width: 45px;
   background-color:red;
 }
+.pcolor_spot{
+  border-radius: 50%;
+  height:45px;
+  width: 45px;
+  background-color:red;
+}
 .tinycolor_spot{
   border-radius: 50%;
   height:8px;
