@@ -81,7 +81,7 @@ body{
   border-radius: 50%;
   height:45px;
   width: 45px;
-  background-color:red;
+  cursor: pointer;
 }
 .tinycolor_spot{
   border-radius: 50%;
