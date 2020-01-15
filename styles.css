@@ -1,0 +1,85 @@
+.color1{ background-color:#24F1B3;}
+.color2{ background-color:#285AEA;}
+.color3{ background-color:#A928EA;}
+.color4{ background-color:#F719B4;}
+.color5{ background-color:#F7192A;}
+.color6{ background-color:#F78519;}
+.color7{ background-color:#EDF719;}
+.color8{ background-color:#27C415;}
+.color10{ background-color:#000000;}
+.color11{ background-color:#FFFFFF;}
+
+body{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 375px;
+  height: 600px;
+}
+
+#old_trials{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 552px;
+}
+
+#clues{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75px;
+  height: 552px;
+}
+
+#interface{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 375px;
+  height: 46px;
+}
+
+.trial{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:300px;
+  height:46px;
+  background-color: yellow;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.clue{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:75px;
+  height:46px;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+#validation{
+  width:75px;
+  height:46px;
+}
+
+.color_spot{
+  border-radius: 50%;
+  height:45px;
+  width: 45px;
+  background-color:red;
+}
+.tinycolor_spot{
+  border-radius: 50%;
+  height:8px;
+  width: 8px;
+  background-color:black;
+}
