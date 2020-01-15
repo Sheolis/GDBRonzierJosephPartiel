@@ -15,7 +15,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   width: 375px;
-  height: 600px;
+  height: 675px;
 }
 
 #old_trials{
@@ -86,4 +86,23 @@ body{
   border-radius: 50%;
   height:8px;
   width: 8px;
+}
+.hidden{display:none}
+
+#end_game{
+  height:50px;
+  width:375px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.final_text{
+  width:300px;
+  text-align: center;
+}
+
+#restart_button{
+  width:75px;
+  height:50px;
 }
