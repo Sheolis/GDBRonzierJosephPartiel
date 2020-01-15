@@ -1,13 +1,13 @@
-.color1{ color:#24F1B3;}
-.color2{ color:#285AEA;}
-.color3{ color:#A928EA;}
-.color4{ color:#F719B4;}
-.color5{ color:#F7192A;}
-.color6{ color:#F78519;}
-.color7{ color:#EDF719;}
-.color8{ color:#27C415;}
-.color10{ color:#000000;}
-.color11{ color:#FFFFFF;}
+.color1{ background-color:#24F1B3;}
+.color2{ background-color:#285AEA;}
+.color3{ background-color:#A928EA;}
+.color4{ background-color:#F719B4;}
+.color5{ background-color:#F7192A;}
+.color6{ background-color:#F78519;}
+.color7{ background-color:#EDF719;}
+.color8{ background-color:#27C415;}
+.color10{ background-color:#000000;}
+.color11{ background-color:#FFFFFF;}
 
 body{
   margin: auto;
@@ -49,6 +49,9 @@ body{
   width:300px;
   height:46px;
   background-color: yellow;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .clue{
@@ -58,9 +61,25 @@ body{
   width:75px;
   height:46px;
   background-color: blue;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 #validation{
   width:75px;
   height:46px;
+}
+
+.color_spot{
+  border-radius: 50%;
+  height:45px;
+  width: 45px;
+  background-color:red;
+}
+.tinycolor_spot{
+  border-radius: 50%;
+  height:8px;
+  width: 8px;
+  background-color:black;
 }
